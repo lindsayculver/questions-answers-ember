@@ -7,6 +7,11 @@ body {
   font-family: 'Muli', sans-serif;
 }
 
-/*.btn {
-  font-size: 9px;
-}*/
+.home-link {
+  align: center;
+}
+
+img {
+  height: 7%;
+  width: 7%;
+}

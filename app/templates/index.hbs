@@ -1,4 +1,4 @@
-<h1>Epicodus Message Board</h1>
+<div class="container">
 
 <ul>
   {{#each model as |question|}}
@@ -9,3 +9,19 @@
 {{new-question save2="save3"}}
 
 {{outlet}}
+
+
+
+
+<!-- <ul>
+{{#each model.questions as |question|}}
+  <li>{{#link-to 'question' question.id}}{{question.author}}{{/link-to}}</li>
+  {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
+{{/each}}
+</ul>
+{{new-question save2="save3"}}
+
+{{outlet}} -->
+
+
+</div>
