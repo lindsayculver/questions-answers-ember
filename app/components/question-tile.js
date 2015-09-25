@@ -1,10 +1,16 @@
-// import Ember from 'ember';
+import Ember from 'ember';
 
 export default Ember.Component.extend({
   isNotesShowing: false,
+  updateQuestion: false,
+
   actions: {
-    notesShow: function() {
+    notesShow() {
       this.set('isNotesShowing', true);
+    },
+
+    update(question,params) {
+      this.sendAction('update', question, params);
     },
 
     delete(question) {

@@ -5,6 +5,7 @@
   {{else}}
     <button {{action 'notesShow'}}>Show Notes</button>
   {{/if}}
+  {{update-question question=question update="update"}}
     <button {{action 'delete' question}}>Delete</button>
 
 
