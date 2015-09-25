@@ -1,0 +1,11 @@
+<li>Question from {{question.author}}: {{question.content}}</li>
+
+  {{#if isNotesShowing}}
+    <p>{{question.notes}}</p>
+  {{else}}
+    <button {{action 'notesShow'}}>Show Notes</button>
+  {{/if}}
+    <button {{action 'delete' question}}>Delete</button>
+
+
+{{yield}}

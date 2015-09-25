@@ -1,0 +1,16 @@
+{ "questions": [{
+    "author": "Jane Doe",
+    "content": "What is Ember and how does it work?",
+    "notes": "I am a new programmer."
+  }, {
+
+    "author": "James Smith",
+    "content": "Are there any good meetups downtown tonight?",
+    "notes": "I am starting the job search."
+  }, {
+
+    "author": "Sally White",
+    "content": "Would anyone like to carpool to school?",
+    "notes": "It's too rainy to ride my bike."
+  }]
+}
