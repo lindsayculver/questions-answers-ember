@@ -1,12 +1,12 @@
 <h1>Epicodus Message Board</h1>
 <h2>Questions with Answers</h2>
 
-{{new-question save2="save3"}}
-
 <ul>
   {{#each model as |question|}}
     {{question-tile question=question destroyQuestion="destroyQuestion"}}
   {{/each}}
 </ul>
+
+{{new-question save2="save3"}}
 
 {{outlet}}
