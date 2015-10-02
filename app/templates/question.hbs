@@ -1,8 +1,18 @@
-<h1>Question From {{model.author}}</h1><br>
+<h1>Question from {{model.author}}</h1><br>
 
-<h2>{{model.content}}<br> {{model.notes}}<br></h2>
+<h2>{{model.content}}<br> ({{model.notes}})<br></h2>
 
 {{question-detail question=model}}
+
+<h3>
+  {{#each model as |answer|}}
+    {{question-detail answer=answer save="save"}}
+  {{/each}}
+</h3>
+
+<!-- {{question-detail save="save"}} -->
+
+<!-- {{question-detail answer=model}} -->
 
 <!-- {{update-question question=model update="update"}} -->
 <!-- <button class="btn btn-danger btn-xs"{{action 'delete' question}}>Delete</button> -->
