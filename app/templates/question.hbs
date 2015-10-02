@@ -1,9 +1,13 @@
-<!-- <ul>
-  {{#each model as |question|}}
-    {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
-  {{/each}}
-</ul>
+<h1>Question From {{model.author}}</h1><br>
 
-{{new-question save2="save3"}}
+<h2>{{model.content}}<br> {{model.notes}}<br></h2>
 
-{{outlet}} -->
+{{question-detail question=model}}
+
+<!-- {{update-question question=model update="update"}} -->
+<!-- <button class="btn btn-danger btn-xs"{{action 'delete' question}}>Delete</button> -->
+
+<!-- <center>
+<h1>Answers</h1>
+<button class="btn btn-warning btn-lg"{{action '' question}}>Add Answer</button>
+</center> -->

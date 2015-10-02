@@ -6,7 +6,7 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    save3(params) {
+    save(params) {
       var newQuestion = this.store.createRecord('question', params);
       newQuestion.save();
       this.TransitionTo('index');

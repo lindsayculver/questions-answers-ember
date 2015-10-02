@@ -15,3 +15,11 @@ img {
   height: 7%;
   width: 7%;
 }
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: grey;
+}

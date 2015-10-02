@@ -1,4 +1,4 @@
-<li>Question from {{question.author}}: <br>{{question.content}}</li>
+<li>{{#link-to "question" question.id}}Question from {{question.author}}: <br>{{question.content}}{{/link-to}}</li>
 
   {{#if isNotesShowing}}
     <p>{{question.notes}}</p>
