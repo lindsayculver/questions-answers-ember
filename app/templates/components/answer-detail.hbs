@@ -1,23 +1,28 @@
 
   {{#each answers as |answer|}}
-<div class="row-fluid">
-  <div class=".col-md-8">
-    <h4>
-      From {{answer.author}}: <h4>" {{answer.text}} "</h4>
-    <h6> Posted on: {{format-date answer.date_added}}</h6>
-    </h4>
-  </div>
+<div class="container">
 
-  <div class="votes">
-    <div class=".col-md-4">
+  <div class="row">
+    <div class="col-md-8">
+      <h4>
+        From {{answer.author}}: <h4>" {{answer.text}} "</h4>
+      <h6> Posted on: {{format-date answer.date_added}}</h6>
+      </h4>
+    </div>
+<br>
+    <div class="votes">
+      <div class="col-md-4">
 
-    <button class="btn btn-default btn-xs"{{action 'voteUp' answer}}><img src="/images/plus.jpg" alt="plus-vote"/></button><br>
-      <h4>Total Votes: {{answer.votes}}</h4>
-    <button class="btn btn-default btn-xs"{{action 'voteDown' answer}}><img src="/images/minus2.jpg" alt="minus-vote"/></button>
+      <button class="btn btn-default btn-xs"{{action 'voteUp' answer}}><img src="/images/plus.jpg" alt="plus-vote" style="width:20px;height:20px;"/></button><br>
+      <center>
+        <h4>{{answer.votes}}</h4>
+      </center>
+      <button class="btn btn-defaul btn-xs"{{action 'voteDown' answer}}><img src="/images/minus.jpg" alt="minus-vote" style="width:20px;height:20px;"/></button>
+      </div>
     </div>
   </div>
-</div>
 
+</div>
 
 {{/each}}
 
