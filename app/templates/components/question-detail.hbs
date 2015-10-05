@@ -7,13 +7,13 @@
         </div>
 
         <div class="form-group">
-          <textarea class="form-control">
-          <label for="content">Your Answer</label>
-          {{input value=content id="content"}}
-          </textarea>
+          <!-- <textarea class="form-control"> -->
+          <label for="text">Your Answer</label>
+          {{textarea value=text id="text"}}
+          <!-- </textarea> -->
         </div>
 
-        <button class="btn btn-primary btn-xs"{{action 'save' question}}>Save Answer</button>
+        <button class="btn btn-primary btn-xs"{{action 'save'}}>Save Answer</button>
       </form>
     </div>
 

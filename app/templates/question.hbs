@@ -2,22 +2,13 @@
 
 <h2>{{model.content}}<br> ({{model.notes}})<br></h2>
 
-{{question-detail question=model}}
 
-<h3>
-  {{#each model as |answer|}}
-    {{question-detail answer=answer save="save"}}
-  {{/each}}
-</h3>
+{{question-detail question=model save="save"}}
 
-<!-- {{question-detail save="save"}} -->
+<h4>{{#each model.answers as |answer|}}
+<hr>
+From {{answer.author}}: " {{answer.text}} "
+{{/each}}</h4>
 
-<!-- {{question-detail answer=model}} -->
 
-<!-- {{update-question question=model update="update"}} -->
-<!-- <button class="btn btn-danger btn-xs"{{action 'delete' question}}>Delete</button> -->
-
-<!-- <center>
-<h1>Answers</h1>
-<button class="btn btn-warning btn-lg"{{action '' question}}>Add Answer</button>
-</center> -->
+<!-- {{new-answer save="save"}} -->
