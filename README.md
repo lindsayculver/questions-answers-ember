@@ -49,3 +49,5 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+Images used for this app were obtained from thenounproject.com. Please see their terms of use for restrictions. https://thenounproject.com/legal/#!terms-of-use Please do not reuse icons without permission from source.
