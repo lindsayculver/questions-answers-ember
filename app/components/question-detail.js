@@ -12,7 +12,9 @@ export default Ember.Component.extend({
         author: this.get('author'),
         text: this.get('text'),
         question: this.get('question'),
+        date_added: Date.now()
       };
+      
       this.sendAction('save', params),
       this.set('addNewAnswer', false);
     }
