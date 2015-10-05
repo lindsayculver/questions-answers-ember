@@ -11,6 +11,10 @@ body {
   align: center;
 }
 
+.votes {
+  float: right;
+}
+
 img {
   height: 7%;
   width: 7%;

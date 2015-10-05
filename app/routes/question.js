@@ -9,7 +9,6 @@ export default Ember.Route.extend({
     save(params) {
       var newAnswer = this.store.createRecord('answer', params);
       var question = params.question;
-      debugger;
       question.get('answers').addObject(newAnswer);
       newAnswer.save().then(function() {
         return question.save();
@@ -19,6 +18,17 @@ export default Ember.Route.extend({
     // destroyAnswer(answer) {
     //   answer.destroyRecord();
     //   this.transitionTo('question-detail');
+    },
+    voteUp(answer) {
+      answer.set('votes', answer.get('votes') + 1);
+      answer.save(),
+      this.transitionTo('question')
+    },
+    voteDown(answer) {
+      answer.set('votes', answer.get('votes') - 1);
+      answer.save(),
+      this.transitionTo('question')
     }
   }
+
 });
