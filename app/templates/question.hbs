@@ -7,5 +7,6 @@
 
 <h4>{{#each model.answers as |answer|}}
 <hr>
-From {{answer.author}}: <h4>" {{answer.text}} "</h4> {{format-date answer.date_added}}
+From {{answer.author}}: <h4>" {{answer.text}} "</h4>
+<h6>Posted on: {{format-date answer.date_added}}</h6>
 {{/each}}</h4>
