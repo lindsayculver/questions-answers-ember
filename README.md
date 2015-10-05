@@ -1,6 +1,6 @@
 # Message-board
 
-Message Board is an Ember application that allows Epicodus students ask and answers eachother's school related questions.
+Message Board is an Ember application that allows Epicodus students ask and answer school related questions.
 
 ## Prerequisites
 
